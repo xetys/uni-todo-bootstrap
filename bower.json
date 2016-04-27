@@ -1,0 +1,21 @@
+{
+  "name": "uni-todo-bootstrap",
+  "description": "a demo project for university using twitters bootstrap",
+  "main": "index.js",
+  "authors": [
+    "David Steiman <d.steiman@stytex.de>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/xetys/uni-todo-bootstrap",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
