@@ -1,7 +1,27 @@
 body {
-  padding-top: 50px;
+  padding-top: 64px;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+
+ul,li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
+  padding: 1vw;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.page-new-todo {
+  max-width: 480px;
+}
+
+.page-new-todo > form > .row {
+  padding: 4px 0px;
 }

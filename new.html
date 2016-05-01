@@ -32,63 +32,42 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">TODOs</a></li>
+            <li><a href="index.html">TODOs</a></li>
             <li><a href="imprint.html">Imprint</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="page container">
-      <h1>My TODOs</h1>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Expiry Date</th>
-            <th>Progress</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Book a hairdresser appointment</td>
-            <td>May 3, 2016</td>
-            <td>0%</td>
-            <td>
-              <div class="btn-group" role="group" aria-label="...">
-                <a href="edit.html" class="btn btn-default">Edit</a>
-                <a href="#" class="btn btn-danger">Delete</a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Prepare presentation and send it to Frank</td>
-            <td>May 5, 2016</td>
-            <td>50%</td>
-            <td>
-              <div class="btn-group" role="group" aria-label="...">
-                <a href="edit.html" class="btn btn-default">Edit</a>
-                <a href="#" class="btn btn-danger">Delete</a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Call Travel Agent re Australia Vacation</td>
-            <td>Aug 19, 2016</td>
-            <td>0%</td>
-            <td>
-              <div class="btn-group" role="group" aria-label="...">
-                <a href="edit.html" class="btn btn-default">Edit</a>
-                <a href="#" class="btn btn-danger">Delete</a>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div>
-        <a href="new.html" class="btn btn-success">Add TODO</a>
-      </div>
+    <div class="page container page-new-todo">
+      <h1>Add TODO</h1>
+      <form method="POST">
+        <div class="row">
+          <div class="col-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <label for="todo-name">Name</label>
+          </div>
+          <div class="col-8 col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <input name="Todo[name]" id="todo-name" type="text">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <label for="todo-expiry-date">Expiry Date</label>
+          </div>
+          <div class="col-8 col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <input name="Todo[expiry-date]" id="todo-expiry-date" type="date" value="2016-05-31">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <label for="todo-progress">Progress</label>
+          </div>
+          <div class="col-8 col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <input name="Todo[progress]" id="todo-progress" type="number" min="0" max="100" value="50">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
